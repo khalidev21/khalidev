@@ -608,7 +608,7 @@ grid-template-rows:600px 500px;
 .portfolio{
     display: grid;
     grid-template-columns: 40% 60%;
-    margin:  0 5%;
+    margin:  5% 5%;
     padding-top: 5%;
     gap: 5px;
     height: auto;
