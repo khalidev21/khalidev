@@ -65,7 +65,21 @@ aficionesA.addEventListener("click", ()=>{
     habilidades.style.zIndex="2";
     
 })
+/*galeria*/
 
+var btnIlustracion=document.getElementById("btn-ilustracion");
+var btnFotografia= document.getElementById("btn-fotografia");
+var ilustracion=document.getElementById("galeria-ilustracion");
+var fotografia=document.getElementById("galeria-fotografia");
+
+btnFotografia.addEventListener("click", ()=>{
+    ilustracion.style.display = "none";
+    fotografia.style.display = "grid";
+
+})
+btnIlustracion.addEventListener("click", ()=>{
+    ilustracion.style.display = "grid";
+    fotografia.style.display = "none";
 
 
 
