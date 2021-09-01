@@ -4,12 +4,11 @@
     
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/svg+xml" href="fotos/logo.svg" sizes="any">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-index.css" />
     
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
-    <title>Khalidev</title>
+    <title>Document</title>
   </head>
   <body id="body" >
 
@@ -41,50 +40,36 @@
      </nav> 
    
     </header>
-    
-      
+
+    <!-- HOME -->
 
       <section id="home" class="home">
-        
-
-        <div class="media">
-
-          <a href="https://www.behance.net/khalidev" target="_blanc"><i class="fab fa-behance"></i></a>
-          <a href="mailto:khalidev21@gmail.com"><i class="fal fa-envelope-open"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-whatsapp"></i></a>
-          <div class="linea"></div>
-         
-
-        </div>
     
         <div class="bienvenida">
-          <div class="bienvenida-ilustracion"><!-- ¡Hola! Gracias por visitar mi espacio personal, donde la simplicidad es la máxima expresión de la sofisticación.
- -->
-            <img id="coding" src="fotos/coding.png" alt="">
-            <img id="coding-dark" src="fotos/coding-dark.png" alt="">
-            </div>
-          </div>
+        <div class="texto">
+          <h1>¡Aupa!</h1><br>
+          <p class="bold">Gracias por visitar mi página web</p><br>
+          <p>Aquí encontara informacion sobre mi, lo que hago y los datos de contacto si queire que trabajemos juntos.</p> <br>
+          <a href="#contacto">Contactar <i class="fas fa-chevron-left"></i></a>
+        </div>
+        </div>
 
-       
-
-          </div>
        <div class="tarjetas" id="tarjetas">
          
 
        <article id="biografia" class="biografia">
           <div  class="a" id="biografia-a">
-            <i class="fas fa-user-astronaut"></i>
+            <i class="fas fa-user-cowboy"></i>
             <p>Biografia</p>
           </div>
           <div class="b">
-            <div class="imagen"><img src="fotos/khalid-img.jpg" width="80px">
+            <div class="imagen"><img src="fotos/khalid-img.jpg">
             </div>
             <div class="texto">
               
             
               <p> Me llamo <strong> khalid </strong>, soy diseñador gráfico y desarrolldor web, siempre me ha fascinado el mundo del arte y la informática, combinados hacen del mundo un lugar más cómodo y atractivo ... </p>
-              <button><a href="biografia.html"> Leer mas</a></button>
+              <button><a href="tarjetas.html"> Leer mas</a></button>
             </div>
           </div>
 
@@ -152,23 +137,32 @@
                 </div>
               </div>
             </div> 
-            <button> <a href="habilidades.html"> Leer mas</a></button>
+            <button> <a href="tarjetas.html"> Leer mas</a></button>
           </div>
           
 
        </article>
 
        <article id="aficiones" class="aficiones">
+         
           <div class="a" id="aficiones-a">
             <i class="far fa-bow-arrow"></i>
             <p>Aficiones</p>
           </div>
           <div class="b">
-           <div ><img src="fotos/aficiones.png" alt=""></div>
-           <button><a href="aficiones.html"> Saber mas</a></button>
+            <div class="b1">
+             <div class="af1"><i class="far fa-biking"></i><p>Ciclismo</p></div>
+             <div class="af2"><i class="far fa-camera-polaroid"></i><p>Fotografía</p></div>
+             <div class="af3"><i class="far fa-book-spells"></i><p>Lectura</p></div>
+             <div class="af4"><i class="far fa-tree-alt"></i> <p>Senderismo</p></div>
+             <div class="af5"><i class="far fa-plane"></i><p>Viajar</p></div>
+             <div class="af6"><i class="far fa-laptop-code"></i><p>Programación</p></div>
+             <div class="af7"><i class="far fa-bezier-curve"></i><p>Ilustración</p></div>
+            </div>
+           <div class="b2">
+           <button><a href="tarjetas.html"> Saber mas</a></button>
           </div>
-          
-        
+          </div>
 
        </article>
        
@@ -176,15 +170,32 @@
       </div>
 
     </section>
-    <section id="portfolio" class="portfolio">
-      <article class="seleccion">
-        <div class="ilustracion" id="btn-ilustracion"><i class="fal fa-pencil-ruler"></i><p>Ilustración</p></div>
-        <div class="fotografia" id="btn-fotografia"><i class="fal fa-camera-retro"></i><p>Fotografía</p></div>
-       
-      </article>
-      <article class="galeria" id="galeria-ilustracion">
 
-        <div><a href="https://www.behance.net/gallery/64428517/A-STRANGE-NIGHT" target="_blank"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/34a15764428517.5ad1f5fb1f01d.jpg" alt=""></a></div>
+   <!-- PAGINA DE PORTFOILO -->
+
+    <section id="portfolio" class="portfolio">
+    <div class="portfolio-titulo" id="portfolio-titulo"> 
+      <div class="portfolio-titulo-a">
+        <i class="fas fa-bookmark"></i>
+        <h3>Portfolio</h3>
+      </div>
+      <div class="portfolio-titulo-b">
+        <p>Aquí puede ver todos mis trabajos relacionados con el diseño gráfico, el desarrollo web y la fotografía. <br> Tambien dejo un enlace a mi portfolio de diseño  gráfico en <a href="">Behance</a></p>
+      </div>
+      </div>
+    <div class="portfolio-cuerpo">
+
+      <article class="portfolio-menu" id="portfolio-menu"> 
+        <div id="dev"><i class="far fa-laptop-code"></i> <p>Web </p></div>
+        <div id="ilu"><i class="far fa-bezier-curve"></i><p>Ilustración</p></div>
+        <div id="fot"><i class="far fa-camera-polaroid"></i> <p>Fotografía</p></div>
+        <div id="dev"><i class="fas fa-film"></i> <p>Video</p></div>
+      </article>
+
+      <article class="galeria" id="galeria"> 
+        <div class="g-ilustracion" id="g-ilustracion">
+
+        <div><a href="https://www.behance.net/gallery/68455381/Fotogrfia-movil" target="_blank"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/34a15764428517.5ad1f5fb1f01d.jpg" alt=""></a></div>
 
         <div><a href="https://www.behance.net/gallery/63080937/Ilustracion-monumentos-de-Avila-1" target="_blank"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d53bc663080937.5aa58a9c03fe1.jpg" alt=""></a></div>
 
@@ -209,9 +220,10 @@
 
         <div><a href="https://www.behance.net/gallery/54070207/Creative-Academy"target="_blank"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3d0aee54070207.594bd7dac47d6.jpg" alt="Creative Academy logo"></a>
         </div>
+        </div>
 
-      </article>
-      <article class="galeria" id="galeria-fotografia">
+     <!--  
+      <div class="g-fotografia" id="g-fotografia">
 
         <div><a href="https://www.behance.net/gallery/68455381/Fotogrfia-movil" target="_blank"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/988441123672355.60f320af1714e.jpg" alt="Cerveza-Bici"></a></div>
 
@@ -240,22 +252,26 @@
         </div>
         <div><a href="https://www.behance.net/gallery/68455381/Fotogrfia-movil"target="_blank"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/16a2c8123672355.60f320ae775c3.jpg" alt="Tranvia"></a>
         </div>
-
-      </article>
-      
-      
+        </div>-->
+        </article> 
+    </div>
     </section>
+
+<!-- PAGINA DE CONTACTO -->
+
     <section id="contacto" class="contacto">
       <article class="lienzo">
        
-        
         <div class="formulario">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46798.21063918236!2d-2.7121776652515006!3d42.85409453656936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc2377d3d8f5b%3A0x9c6eb78c91ab49c9!2sVitoria-Gasteiz%2C%20%C3%81lava!5e0!3m2!1ses!2ses!4v1626201306445!5m2!1ses!2ses" width="100%" height="100%" style="border-radius: 5px;" allowfullscreen="" loading="lazy"></iframe>
+          
         </div>
         <div class="ilustracion"><img id="etxe" src="fotos/etxe2.png" alt=""></div>
       </article>
 
     </section>
+
+    <!-- FOOTER -->
+    
     <footer>
       <div ><svg class="logofoter" width="70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.18 202.03"><defs>
         <linearGradient id="grad1"
