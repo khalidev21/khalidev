@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:rubik;
+    scroll-behavior: smooth;
+    font-weight: 400;
+    scroll-padding-top: 100px;
+
+}
+body{
+    --c-rojo:#f7768e;
+    --c-naranja:#ff9e64;
+    --c-azul:#245E71;
+    --c-verde:#020202;
+    --c-morado:#8d7af7;
+    --c-rosa:#f79ae8;
+    --c-p1: linear-gradient(45deg,var(--c-rojo 0%),var(--c-naranja 100%));
+    --c-p2: linear-gradient(45deg, var(--c-azul),var(--c-verde));
+    --c-p3: linear-gradient(45deg,var(--c-morado),var(--c-rosa));
+    --c-shadow:rgb(153, 153, 153);
+  
+
+    --c-a: #ffffff;
+    --c-b:#e9e9e9;
+    --c-c:#d8d8d8;
+    --c-d:#707070;
+    --c-e:#303136;
+    --c-none:white;
+
+  
+
+    
+    background: var(--c-b);
+    transition: all 1s ease;
+    height: auto;
+    
+
+}
+.darkmode{
+    --c-rojo:#f7768e;
+    --c-naranja:#ff9e64;
+    --c-azul:#7aa2f7;
+    --c-verde:#5edaf0;
+    --c-morado:#8d7af7;
+    --c-rosa:#f79ae8;
+    --c-p1: linear-gradient(45deg,var(--c-rojo),var(--c-naranja));
+    --c-p2: linear-gradient(45deg, var(--c-azul),var(--c-verde));
+    --c-p3: linear-gradient(45deg,var(--c-morado),var(--c-rosa));
+    --c-shadow:rgb(13, 13, 20);
+  
+
+    --c-a: rgb(74, 75, 83);
+    --c-b:#26272b;
+    --c-c:#ffffff;
+    --c-d:#d2d3e4;
+    --c-e:#ffffff;
+    --c-none:white;
+    transition: all 1s ease;
+}
+/*HEADER***********/
+body::-webkit-scrollbar{
+    width: 7px;
+    background:var(--c-a);
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--c-e);
+    border-radius: 50px;
+}
+
+.header{
+    
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--c-a);
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    filter: opacity(.95);
+    
+
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+    margin-left: 5%;
+    fill: var(--c-a);
+    background: var(--c-e);
+    padding: 15px;
+}
+#btn-modo{
+    position: absolute;
+    right: 5%;
+    font-size: 1.2em;
+    color: var(--c-e);
+    cursor: pointer;
+}
+
+#atras{
+    position: absolute;
+    right: 15%;
+    font-size: 1.2em;
+    color: var(--c-e);
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    line-height: 10px;
+
+}
+
+/*******TARJETAS*******/
+
+.tarjetas{
+    height: 100vh;
+    margin:5%;
+    width: auto;
+    margin-right:5%;
+    margin-top: 100px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 10px;
+
+}
+
+/******BARRA LATERAL*******/
+
+.barra-lateral{
+    background:var(--c-a);
+    display: grid;
+    grid-template-rows: 20% 10% 10% 10%;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px -15px var(--c-shadow);
+
+}
+.barra-lateral i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    color: var(--c-e);
+    position: relative;
+}
+
+.barra-lateral .imagen-perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-lateral .imagen-perfil img{
+    width:100% ;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+}
+.imagen-perfil .circulo-imagen{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    border:1px solid var(--c-a);
+}
+.circulo-imagen img:hover{
+    transform: scale(2);
+    filter: grayscale(0%);
+}
+#bio,
+#habi,
+#afic{
+    transition: all .2s ease-in-out;
+    
+}
+
+#bio::after{
+    content: "Biografía";
+    position: absolute;
+    font-family: rubik;
+    font-weight: 400;
+    font-size: .8em;
+    bottom:15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+#habi::after{
+    content: "Habilidades";
+    position: absolute;
+    font-family: rubik;
+    font-weight: 400;
+    font-size: .8em;
+    bottom:15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+#afic::after{
+    content: "Aficiones";
+    position: absolute;
+    font-family: rubik;
+    font-weight: 400;
+    font-size: .8em;
+    bottom:15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+#bio:hover::after{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all .2s ease-in-out;
+}
+#habi:hover::after{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all .2s ease-in-out;
+}
+#afic:hover::after{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all .2s ease-in-out;
+}
+#bio:hover,
+#habi:hover,
+#afic:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width: 500px) {  
+    .tarjetas{
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows:100px auto;
+        gap: 10px;
+    
+    } 
+    .barra-lateral{
+        background:var(--c-a);
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 20px -15px var(--c-shadow);
+    }
+    .barra-lateral i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+        color: var(--c-e);
+        position: relative;
+    }
+    #bio::after{
+        content: "Biografía";
+        position: absolute;
+        font-family: rubik;
+        font-weight: 400;
+        font-size: .8em;
+        bottom:35px;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+    }
+    #habi::after{
+        content: "Habilidades";
+        position: absolute;
+        font-family: rubik;
+        font-weight: 400;
+        font-size: .8em;
+        bottom:35px;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+    }
+    #afic::after{
+        content: "Aficiones";
+        position: absolute;
+        font-family: rubik;
+        font-weight: 400;
+        font-size: .8em;
+        bottom:35px;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+    }
+}
+/********CUERPO********/
+
+.cuerpo{
+    background-color: var(--c-a);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+
+}
+.biografia{
+    width: 100%;
+    height: 100%;
+}
+.biografia .cover{
+    height:30% ;
+}
+.biografia .cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.biografia .texto{
+    padding: 20px;
+    font-size: .9em;
+    color: var(--c-e);
+    text-align: justify;
+}
